@@ -6,12 +6,12 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: poetry
-        run: pip install poetry
-      - name: make
-        run: make install
-      - name: lint
-        run: make lint
+      - name: installing dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
 
+      - name: Lint
+        run: make lint
 
 
