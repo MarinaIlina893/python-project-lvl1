@@ -9,11 +9,10 @@ jobs:
       - name: installing dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install poetry
+          pip install flake8 pytest
+          pip install -r requirements.txt
 
       - name: Lint
-        run: |
-          pip install flake8
-          make lint
+        run: make lint
 
 
