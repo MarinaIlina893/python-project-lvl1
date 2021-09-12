@@ -3,6 +3,14 @@
 import random
 
 
+def main():
+    brain_even()
+
+
+if __name__ == '__main__':
+    main()
+
+
 def welcome_user():
     print('Welcome to the Brain Games!!')
     user_name = input('May I have your name?')
@@ -17,7 +25,7 @@ def brain_even():
     while game_counter < 3:
         attempt = game_attempt()
         if not attempt:
-            print('Let\'s try again, {0}!'.format(user_name))
+            print("Let\'s try again, {0}!".format(user_name))
             break
         if game_counter == 2:
             print('Congratulations, {0}'.format(user_name))
@@ -25,22 +33,17 @@ def brain_even():
 
 
 def generate_number():
-    number = random.randint(0, 100)
-    return number
+    return random.randint(0, 100)
 
 
 def get_answer(number):
     if number % 2 == 0:
         return 'yes'
-    else:
-        return 'no'
+    return 'no'
 
 
 def valid_answer(answer):
-    if answer in ('yes', 'no'):
-        return True
-    else:
-        return False
+    return answer in ('yes', 'no')
 
 
 def game_attempt():
@@ -54,18 +57,7 @@ def game_attempt():
             print('Correct!')
             is_success = True
         else:
-            print('\'{0}\' is wrong answer ;(. Correct answer was \'{1}\''.format(user_answer, correct_answer))
+            print("\'{0}\' is wrong answer ;(. Correct answer was \'{1}\'".format(user_answer, correct_answer))
             is_success = False
-    else:
-        print('{0} is not valid answer'.format(user_answer))
-        is_success = False
+    print('{0} is not valid answer'.format(user_answer))
     return is_success
-
-
-def main():
-    brain_even()
-
-
-if __name__ == '__main__':
-    main()
-
