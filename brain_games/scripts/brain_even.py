@@ -49,7 +49,7 @@ def valid_answer(answer):
 def game_attempt():
     question = generate_number()
     is_success = False
-    print('Question: ', question)
+    print('Question: {0}'.format(question))
     user_answer = input('Your answer: ')
     correct_answer = get_answer(question)
     if valid_answer(user_answer):
