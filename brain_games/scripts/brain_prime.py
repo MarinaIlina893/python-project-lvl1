@@ -32,7 +32,7 @@ def brain_prime():
 
 def game_attempt():
     task = prime.generate_task()
-    print(task)
+    print('Question: {0}'.format(task))
     is_success = False
     user_answer = input('Your answer: ')
     correct_answer = prime.get_answer(task)

@@ -32,7 +32,7 @@ def brain_gcd():
 
 def game_attempt():
     task = gcd.generate_task()
-    print(task)
+    print('Question: {0}'.format(task))
     is_success = False
     user_answer = input('Your answer: ')
     correct_answer = gcd.get_answer(task)

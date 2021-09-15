@@ -32,7 +32,7 @@ def brain_calc():
 
 def game_attempt():
     task = calc.generate_task()
-    print(task)
+    print('Question: {0}'.format(task))
     is_success = False
     user_answer = input('Your answer: ')
     correct_answer = calc.get_answer(task)

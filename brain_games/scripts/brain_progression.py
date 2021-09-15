@@ -32,7 +32,7 @@ def brain_progression():
 
 def game_attempt():
     task = progression.generate_task()
-    print(task)
+    print('Question: {0}'.format(task))
     is_success = False
     user_answer = input('Your answer: ')
     correct_answer = progression.get_answer(task)
