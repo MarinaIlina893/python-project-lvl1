@@ -40,6 +40,7 @@ def game_attempt():
         print('Correct!')
         is_success = True
     else:
-        print("\'{0}\' is wrong answer ;(. Correct answer was \'{1}\'".format(user_answer, correct_answer))
+        print("\'{0}\' is wrong answer ;(. \
+Correct answer was \'{1}\'".format(user_answer, correct_answer))
         is_success = False
     return is_success
