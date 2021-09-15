@@ -26,7 +26,7 @@ def brain_progression():
             print("Let\'s try again, {0}!".format(user_name))
             break
         if game_counter == 2:
-            print('Congratulations, {0}'.format(user_name))
+            print('Congratulations, {0}!'.format(user_name))
         game_counter += 1
 
 
