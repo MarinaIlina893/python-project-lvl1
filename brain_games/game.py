@@ -31,7 +31,7 @@ def game_attempt(game):
     else:
         print(
             "\'{0}\' is wrong answer ;(. Correct answer was \'{1}\'".format(
-                user_answer, correct_answer
+                user_answer, correct_answer,
             ),
         )
         is_success = False

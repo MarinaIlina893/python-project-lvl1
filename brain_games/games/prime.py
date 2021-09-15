@@ -17,7 +17,7 @@ def get_answer(task):
 
 def is_prime(number):
     if number % 2 == 0:
-        return False
+        return number == 2
     divider = 3
     while divider ^ 2 <= number and number % divider != 0:
         divider += 2
